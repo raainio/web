@@ -1,0 +1,170 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+*/
+
+/*
+@font-face {
+    font-family: 'amaticbold';
+    src: url('./webfontkit-20190302-115435/amatic-bold-webfont.woff2') format('woff2'),
+    url('./webfontkit-20190302-115435/amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/*
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+*/
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'amaticbold', sans-serif;
+    font-size: 1em;
+    /*color: #333333;*/
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 3em;
+
+    /*text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;*/
+
+    /*border-bottom: 2px solid #0067ff;*/
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+    text-shadow:
+            -1px -1px 0 #333333,
+            1px -1px 0 #333333,
+            -1px 1px 0 #333333,
+            1px 1px 0 #333333;
+    border-bottom: 1px solid #333333;
+    transition: all .4s ease;
+}
+
+a:hover {
+    color: white;
+    text-shadow:
+            -1px -1px 0 #0067ff,
+            1px -1px 0 #0067ff,
+            -1px 1px 0 #0067ff,
+            1px 1px 0 #0067ff;
+    border-bottom: 1px solid #0067ff;
+}
+
+.wrapper {
+    position: relative;
+    box-shadow: 0 0 1em #333333;
+}
+
+.wrapper section {
+    position: relative;
+    /*background: #eeeeee;*/
+}
+
+.wrapper section article {
+    margin: 0 auto;
+    height: 0;
+    position: absolute;
+    z-index:99;
+    width: 50%;
+    top:30%;
+    left:25%;
+
+    /*padding: 2em 0;
+    padding-top: 70px;*/
+}
+
+.wrapper section article p {
+    margin-bottom: 1em;
+}
+
+.wrapper section article p:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrapper section:after {
+    content: "";
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+}
+
+.wrapper section:nth-child(1):after {
+    background-image: url("cloud_land.jpg");
+    /*height: 1400px;*/
+}
+
+.wrapper section:nth-child(2):after {
+    background-image: url("radar-core.jpg");
+}
+
+.wrapper section:nth-child(3):after {
+    background-image: url("rain-drop.png");
+}
+
+.wrapper section:nth-child(4):after {
+    background-image: url("radar-antennas.jpg");
+}
+
+.wrapper section:nth-child(5):after {
+    background-image: url("");
+}
+
+/*
+https://farm4.static.flickr.com/3150/2391651759_127116344f_b.jpg
+        .wrapper section:nth-child(5):after {
+            background-image: url("https://drive.google.com/uc?id=0B4n1QzrlB220SGxvRzdVcXZHZzQ");
+        }
+
+        .wrapper section:nth-child(6):after {
+            background-image: url("https://drive.google.com/uc?id=0B4n1QzrlB220algzZ0hodlFPMDQ");
+        }*/
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .wrapper section:after {
+        height: 600px;
+    }
+
+    .wrapper section article {
+        width: 80%;
+        top:20%;
+        left:10%;
+    }
+
+    /*.wrapper section:after {
+        height: 15em;
+    }*/
+}
+
